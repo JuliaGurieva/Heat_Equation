@@ -3,10 +3,10 @@
 
 int main() {
     const int nx = 250; // x steps
-    const double h = 1./nx;
-    double dt = 0.000004; // time steps in 2tau
+    const double h = 1./nx; // x step
+    double dt = 0.000004; // time step
     const int nt = 1250000; // time steps in 5tau
-    const int nt2 = 2 * nt / 5;
+    const int nt2 = 2 * nt / 5; // time steps in 2tau
     auto *u = new double[nx + 1]; // target vector - function u(x)
     //vectors for tridiagonal matrix algorithm
     auto *g = new double[nx + 1];
