@@ -43,7 +43,7 @@ double sum(int N, const double* yk, const double* ck, double x, double t) {
 
 int main() {
     const int nx = 250; // x steps
-    const int nt = 625000; // time steps in 5tau
+    const int nt = 1250000; // time steps in 5tau
     const int N = 50; // max sum index. Number of terms required
     const double eps = 2e-6; // binary search precision for eigenvalues
     auto *yk = new double[N + 1]; // eigenvalues
